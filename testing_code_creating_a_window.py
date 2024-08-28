@@ -6,7 +6,7 @@ def button_one_press():
     button_two.destroy()
     label = tk.Label(root, text="you pressed button 1 ", font=("Helvetica", 16))
     label.pack(pady=20)
-    main = ttk.Button(root, text = 'Main', command=lambda:button_one_press() )
+    main = ttk.Button(root, text = 'temp', command=lambda:clear() )
     main.pack(ipadx=5, ipady=5, expand=True)
 
 
@@ -15,13 +15,15 @@ def button_two_press():
     button_two.destroy()
     label = tk.Label(root, text="you pressed button 2 ", font=("Helvetica", 16))
     label.pack(pady=20)
-    main = ttk.Button(root, text = 'Main', command=lambda:button_one_press() )
+    main = ttk.Button(root, text = 'temp', command=lambda:clear() )
     main.pack(ipadx=5, ipady=5, expand=True)
 
 def clear():
     button_one.destroy
     button_two.destroy
     exit_button.destroy
+    main = ttk.Button(root, text = 'Main', command=lambda:clear() )
+    main.pack(ipadx=5, ipady=5, expand=True)
 
 
 # Create the main window
