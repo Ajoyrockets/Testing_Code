@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-def button_one_press(button_one,button_two):
+def button_one_press():
     button_one.destroy()
     button_two.destroy()
     label = tk.Label(root, text="you pressed button 1 ", font=("Helvetica", 16))
@@ -17,6 +17,12 @@ def button_two_press():
     label.pack(pady=20)
     main = ttk.Button(root, text = 'Main', command=lambda:button_one_press() )
     main.pack(ipadx=5, ipady=5, expand=True)
+
+def clear():
+    button_one.destroy
+    button_two.destroy
+    exit_button.destroy
+
 
 # Create the main window
 root = tk.Tk()
