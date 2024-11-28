@@ -34,7 +34,9 @@ def draw_window():
     pygame.display.update()
 
 
-def main(): 
+def main():
+    red = pygame.Rect(100,300 )
+
     clock = pygame.time.Clock()
     run = True
     while run :
