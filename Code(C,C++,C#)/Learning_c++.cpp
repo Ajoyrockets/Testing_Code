@@ -1,9 +1,9 @@
-// myfirstprogram.cpp
-
 #include <iostream>
-using namespace std;
 
 int main() {
-  cout << "Hello World!";
-  return 0;
+    std::cout << "Hello there";
+
+    return 0;
 }
+
+//cl.exe build and debug is only usable when VS Code is run from the Developer Command Prompt for VS.
